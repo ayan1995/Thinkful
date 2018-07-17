@@ -25,20 +25,19 @@ print(sample1.std())
 print(sample2.std())
 plt.hist(sample1, alpha=0.5, label='sample 1') 
 plt.hist(sample2, alpha=0.5, label='sample 2')
+plt.legend(loc='upper right')
 ```
 
-    2.08
-    5.1
-    1.2302845199383758
-    1.6881943016134133
+    2.01
+    4.77
+    1.4387147041717478
+    1.4956938189348783
 
 
 
 
 
-    (array([ 5., 12., 24.,  0., 19., 19.,  0., 12.,  6.,  3.]),
-     array([2. , 2.7, 3.4, 4.1, 4.8, 5.5, 6.2, 6.9, 7.6, 8.3, 9. ]),
-     <a list of 10 Patch objects>)
+    <matplotlib.legend.Legend at 0x114861e48>
 
 
 
@@ -58,20 +57,19 @@ print(sample1.std())
 print(sample2.std())
 plt.hist(sample1, alpha=0.5, label='sample 1') 
 plt.hist(sample2, alpha=0.5, label='sample 2')
+plt.legend(loc='upper right')
 ```
 
-    1.966
-    4.955
-    1.2941576410932325
-    1.5003249647992931
+    1.932
+    5.018
+    1.2121782047207417
+    1.6104893666212143
 
 
 
 
 
-    (array([  9.,  35., 119., 230.,   0., 251., 196., 118.,  36.,   6.]),
-     array([1. , 1.8, 2.6, 3.4, 4.2, 5. , 5.8, 6.6, 7.4, 8.2, 9. ]),
-     <a list of 10 Patch objects>)
+    <matplotlib.legend.Legend at 0x113f41f98>
 
 
 
@@ -96,20 +94,19 @@ print(sample1.std())
 print(sample2.std())
 plt.hist(sample1, alpha=0.5, label='sample 1') 
 plt.hist(sample2, alpha=0.5, label='sample 2')
+plt.legend(loc='upper right')
 ```
 
-    2.1
-    4.65
-    1.3379088160259651
-    1.7109938632268673
+    2.4
+    5.5
+    1.2806248474865698
+    1.9874606914351791
 
 
 
 
 
-    (array([1., 2., 0., 1., 0., 6., 2., 0., 5., 3.]),
-     array([1. , 1.6, 2.2, 2.8, 3.4, 4. , 4.6, 5.2, 5.8, 6.4, 7. ]),
-     <a list of 10 Patch objects>)
+    <matplotlib.legend.Legend at 0x113b34278>
 
 
 
@@ -130,15 +127,16 @@ print(sample1.std())
 print(sample2.std())
 plt.hist(sample1, alpha=0.5, label='sample 1') 
 plt.hist(sample2, alpha=0.5, label='sample 2')
+plt.legend(loc='upper right')
 from scipy.stats import ttest_ind
 print(ttest_ind(sample2, sample1, equal_var=False))
 ```
 
-    3.01
-    5.04
-    1.3963881981741324
-    1.6965848048358796
-    Ttest_indResult(statistic=9.1921374964037, pvalue=6.624103285805106e-17)
+    2.95
+    4.83
+    1.4168627315304754
+    1.483610461003831
+    Ttest_indResult(statistic=9.118147664531472, pvalue=8.792838812604047e-17)
 
 
 
@@ -171,15 +169,16 @@ print(sample1.std())
 print(sample2.std())
 plt.hist(sample1, alpha=0.5, label='sample 1') 
 plt.hist(sample2, alpha=0.5, label='sample 2')
+plt.legend(loc='upper right')
 from scipy.stats import ttest_ind
 print(ttest_ind(sample2, sample1, equal_var=False))
 ```
 
-    4.22
-    4.94
-    1.6527552752903258
-    1.362497706420088
-    Ttest_indResult(statistic=3.3445553615833217, pvalue=0.0009919448786839802)
+    3.81
+    5.01
+    1.453925720248459
+    1.5588136514670379
+    Ttest_indResult(statistic=5.601305237336355, pvalue=7.086290410111413e-08)
 
 
 
@@ -205,15 +204,16 @@ print(sample1.std())
 print(sample2.std())
 plt.hist(sample1, alpha=0.5, label='sample 1') 
 plt.hist(sample2, alpha=0.5, label='sample 2')
+plt.legend(loc='upper right')
 from scipy.stats import ttest_ind
 print(ttest_ind(sample2, sample1, equal_var=False))
 ```
 
-    5.2
-    9.63
-    2.2891046284519194
-    2.8342723934018763
-    Ttest_indResult(statistic=12.098600609059343, pvalue=2.4260221516623553e-25)
+    5.14
+    10.22
+    2.190981515211847
+    3.389926252885157
+    Ttest_indResult(statistic=12.522588478223756, pvalue=6.878739814633878e-26)
 
 
 
