@@ -1,2 +1,2 @@
-# Thinkful Prep Course
-Projects for Thinkful
+# Thinkful Bootcamp
+Coursework for Thinkful.
