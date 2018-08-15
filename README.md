@@ -1,2 +1,2 @@
 # Thinkful Bootcamp
-Coursework for Thinkful.
+Materials for Thinkful.
