@@ -1,0 +1,19 @@
+Server: Sucuri/Cloudproxy
+Date: Tue, 18 Dec 2018 16:47:45 GMT
+Content-Type: text/html; charset=UTF-8
+X-Sucuri-Id: 14010
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding,Cookie
+Location: http://everydaysexism.com/
+Cache-Control: max-age=600
+Expires: Tue, 18 Dec 2018 13:59:28 GMT
+Content-Encoding: gzip
+X-Endurance-Cache-Level: 2
+X-Acc-Exp: 43200
+X-Proxy-Cache: EXPIRED www.everydaysexism.com
+X-Sucuri-Cache: HIT
+X-Cache: MISS from localhost
+X-Cache-Lookup: MISS from localhost:3128
+Via: 1.1 localhost (squid/3.5.27)
