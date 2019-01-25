@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for iphonereviews_techradar project
+# Scrapy settings for opinion_mining project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'iphonereviews_techradar'
+BOT_NAME = 'opinion_mining'
 
-SPIDER_MODULES = ['iphonereviews_techradar.spiders']
-NEWSPIDER_MODULE = 'iphonereviews_techradar.spiders'
+SPIDER_MODULES = ['opinion_mining.spiders']
+NEWSPIDER_MODULE = 'opinion_mining.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'iphonereviews_techradar (+http://www.yourdomain.com)'
+#USER_AGENT = 'opinion_mining (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'iphonereviews_techradar.middlewares.IphonereviewsTechradarSpiderMiddleware': 543,
+#    'opinion_mining.middlewares.IphonereviewsTechradarSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'iphonereviews_techradar.middlewares.IphonereviewsTechradarDownloaderMiddleware': 543,
+#    'opinion_mining.middlewares.IphonereviewsTechradarDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'iphonereviews_techradar.pipelines.IphonereviewsTechradarPipeline': 300,
+#    'opinion_mining.pipelines.IphonereviewsTechradarPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
