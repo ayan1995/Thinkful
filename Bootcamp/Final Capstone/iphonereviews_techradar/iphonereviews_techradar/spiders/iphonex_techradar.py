@@ -5,7 +5,7 @@ from scrapy.spiders import CrawlSpider, Rule
 
 
 class TechradarSpider(CrawlSpider):
-    name = 'iphonex'
+    name = 'techradar_iphonex'
     allowed_domains = ['www.techradar.com']
     start_urls = ['http://www.techradar.com/search?searchTerm=iphone+x/']
 
