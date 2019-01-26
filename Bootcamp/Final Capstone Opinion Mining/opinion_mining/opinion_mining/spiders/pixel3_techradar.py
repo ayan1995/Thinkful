@@ -20,13 +20,22 @@ class Googlepixel3Spider(CrawlSpider):
     )
 
     def parse_item(self, response):
-        yield {
-            'title': response.xpath("//h1[@itemprop='name headline']/text()").extract_first(),
-            'author': response.xpath("//a[@rel='author']/span[@itemprop='name']/text()").extract()
-        }
+        # yield {
+        #     'title': response.xpath("//h1[@itemprop='name headline']/text()").extract_first(),
+        #     'author': response.xpath("//a[@rel='author']/span[@itemprop='name']/text()").extract()
+        # }
         
-        for texts in response.xpath("//div[@class='text-copy bodyCopy auto']"):
+        for texts in response.xpath("//article[@class='review-article']"):
             yield {
+                'title': texts.xpath("//h1[@itemprop='name headline']/text()").extract_first(),
+                'author': texts.xpath("//a[@rel='author']/span[@itemprop='name']/text()").extract(),
                 'text': texts.xpath("//div[@class='text-copy bodyCopy auto']/p").extract()
                 }
-        
+        for texts in response.xpath("//article[@class='news-article ']"):
+            yield {
+                'title': texts.xpath("//h1[@itemprop='name headline']/text()").extract_first(),
+                'author': texts.xpath("//a[@rel='author']/span[@itemprop='name']/text()").extract(),
+                'text': texts.xpath("//div[@class='text-copy bodyCopy auto']/p").extract()
+                }
+
+
